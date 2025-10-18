@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice babu</title>
+    <link rel="shortcut icon" href="Images/web/growtika-FQ3lFA4Zi58-unsplash.jpg" type="image/x-icon">
+    <style>
+        *{
+            background-color: aliceblue;
+        }
+        #pp{
+            text-align: center;
+            text-align: justify;
+            font-weight: bolder;
+            background-color: rgb(10, 202, 202);  
+        }
+        .off{
+            background-color: rgb(219, 40, 40);
+            display: block;
+            border: 4px solid black;
+            border-radius: 5px 10px 20px ;
+
+        }
+        .listmama,span{
+            /* font-family: 'Times New Roman', Times, serif; */
+            color:rgb(64, 0, 255) ;
+            font-size: xx-large;
+            /* background-color: brown; */
+            border: 4px;
+            /* background-image: url(../my-first-website/Images/IMG20231119170730_01.jpg); */
+        }
+        .forms{
+            /*nb. 34px 40 px that means top 1st value top and bottom and 2nd value left and  right..
+            if there was 3 value then 1st top 2nd left&right and 3rd  bottom ....
+            if there was 4 value then 1ar top 2nd right 3rd bottom & 4th is left  */
+            border: 15px solid rgb(30, 66, 199);
+            margin: 50px 100px 700px;
+            text-align: center;
+            background-image: url(Shot\ 1.jpeg);
+            background-size: cover;
+            box-shadow: 10px 10px 30px  rgb(11, 190, 213);
+            /* background-repeat: repeat-x; */
+            /* border-bottom: none; */
+
+        }
+    </style>
+   
+
+</head>
+<body>
+    <p id="pp"><strong>Lorem ipsum</strong> dolor sit <small>amet <br>
+    consectetur</small> adipisicing elit <span class="off">Reprehenderit nesciunt maiores </span>  molestiae. <em>Fuga voluptate </em>aliquam beatae <input type="text" placeholder="khuch to batao"> dicta aliquid nobis? Ut.</p>
+
+    <div class="listmama">
+        <ul type="circle">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        </ul>
+        <ol type="i">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        </ol>  
+    </div>
+    <a href="https://gemini.google.com/app" target="_blank"> Hi i am ai  </a>
+    <br>
+        <img src="Images/web/growtika-FQ3lFA4Zi58-unsplash.jpg" alt="" style=" width: 50%;">
+    <div class="forms">
+        
+        <br>
+        <input type="checkbox"> 
+        <br>
+        <br>
+        <input type="password" placeholder="Write your password" >
+        <br>
+        <br>
+        <input type="email" **required**> 
+        <br>
+        <br>
+        <input type="date"> 
+        <br>
+        <br>
+        <input type="submit" value="click me"> 
+        <br>
+        <br>
+    </div>
+        <!-- help by gimni -->
+        <form action="/submit-data" method="post">
+        
+        <label for="name">নাম :</label>
+        <input type="text" id="name" name="user_name" placeholder="আপনার পুরো নাম লিখুন" required><br><br>
+        
+        <label for="pass">পাসওয়ার্ড:</label>
+        <input type="password" id="pass" name="user_password" placeholder="গোপন পাসওয়ার্ড দিন" maxlength="6" required><br><br>
+        
+        <label for="mail">ইমেল:</label>
+        <input type="email" id="mail" name="user_email" placeholder="example@mail.com"><br><br>
+        
+        <label for="age">বয়স (১৮-৬০):</label>
+        <input type="number" id="age" name="user_age" min="18" max="60" value=""><br><br>
+
+        <label for="volume">ভলিউম লেভেল (Range):</label>
+        <input type="range" id="volume" name="volume_level" min="0" max="100" value="50"><br><br>
+
+        <p>আপনার পছন্দের ভাষা:</p>
+        <input type="checkbox" id="lang_bn" name="language[]" value="Bangla">
+        <label for="lang_bn">বাংলা</label><br>
+        
+        <input type="checkbox" id="lang_en" name="language[]" value="English" checked>
+        <label for="lang_en">ইংরেজি</label><br><br>
+        
+        <p>লিঙ্গ (Gender):</p>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">পুরুষ</label><br>
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">মহিলা</label><br><br>
+
+        <label for="bdate">জন্ম তারিখ:</label>
+        <input type="date" id="bdate" name="birthday"><br><br>
+
+        <label for="photo">প্রোফাইল ছবি আপলোড:</label>
+        <input type="file" id="photo" name="profile_photo" accept="image/*"><br><br>
+
+        <input type="submit" value="রেজিস্টার করুন">
+        
+        <input type="reset" value="রিসেট">
+
+    </form>
+    
+</body>
+</html>
